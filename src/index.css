@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --color-bistro-cream: #faf7f3;
+  --color-bistro-muted: #5a5a5a;
+  --color-bistro-orange: #f97316;
+  --color-bistro-amber: #facc15;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-neutral-900 antialiased bg-[#faf7f3];
+  }
+}

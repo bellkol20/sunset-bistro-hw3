@@ -1,0 +1,4 @@
+{
+  "buildCommand": "npm install && npm run build && npm install --prefix server",
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
+}

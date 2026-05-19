@@ -71,23 +71,24 @@ Record your screen with the app on one side and **MongoDB Compass** (or Atlas Da
 5. **Cart** — Add/update/remove items → `carts` collection updates
 6. **Order** — Place Order → new document in `orders`, cart cleared
 
-## Deploy (Render — recommended)
+## Deploy (Vercel — free, no credit card)
 
 1. Push this repo to GitHub
-2. [render.com](https://render.com) → New **Web Service** → connect repo
-3. Use the `render.yaml` blueprint or set manually:
-   - **Build:** `npm install && npm run build && npm install --prefix server`
-   - **Start:** `npm start`
-4. Add environment variable `MONGODB_URI` (your Atlas string)
-5. After deploy, run seed once from your machine:
+2. Go to [vercel.com/new](https://vercel.com/new) → sign in with **GitHub**
+3. **Import** `sunset-bistro-hw3` → Deploy (defaults are fine; `vercel.json` is included)
+4. Before or right after the first deploy: **Settings → Environment Variables**
+   - Name: `MONGODB_URI`
+   - Value: your Atlas connection string (same as in `server/.env`)
+   - Apply to **Production** → Save → **Redeploy**
+5. Seed the database once from your machine (if the menu is empty on the live site):
 
    ```bash
-   MONGODB_URI="your-atlas-uri" npm run seed
+   npm run seed
    ```
 
-6. Submit the live URL (e.g. `https://sunset-bistro-xxxx.onrender.com`)
+6. Submit your live URL (e.g. `https://sunset-bistro-hw3.vercel.app`)
 
-> **Note:** GitHub Pages only hosts static files and cannot run this API. Use Render, Railway, or similar for HW4.
+> **Note:** GitHub Pages only hosts static files and cannot run this API. Vercel runs the full app (React + Express + MongoDB) on the free Hobby plan.
 
 ## Project structure
 

@@ -1,4 +1,12 @@
+import dotenv from 'dotenv'
+import path from 'path'
+import { fileURLToPath } from 'url'
 import mongoose from 'mongoose'
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+if (!process.env.MONGODB_URI) {
+  dotenv.config({ path: path.join(__dirname, '../.env') })
+}
 
 const cached = global.mongoose ?? (global.mongoose = { conn: null, promise: null })
 

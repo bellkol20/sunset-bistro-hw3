@@ -1,6 +1,10 @@
 {
   "buildCommand": "npm install && npm run build",
-  "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
   "functions": {
     "api/index.js": {
       "maxDuration": 30

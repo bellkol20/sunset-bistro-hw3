@@ -10,4 +10,12 @@ const base = process.env.VITE_BASE || '/'
 export default defineConfig({
   base,
   plugins: [react(), tailwindcss()],
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:5001',
+        changeOrigin: true,
+      },
+    },
+  },
 })

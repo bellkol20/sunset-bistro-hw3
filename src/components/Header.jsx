@@ -59,6 +59,11 @@ export function Header() {
               </NavLink>
             </li>
             <li>
+              <NavLink to="/admin" className={navClass} onClick={close}>
+                Admin
+              </NavLink>
+            </li>
+            <li>
               <Link
                 to="/menu#shopping-cart"
                 className="block py-2 font-semibold text-neutral-800 md:inline md:py-1"

@@ -1,4 +1,4 @@
-export const CART_STORAGE_KEY = 'sunsetBistroCart'
+export const SESSION_STORAGE_KEY = 'sunsetBistroSessionId'
 
 export const gallerySlides = [
   {
@@ -23,65 +23,3 @@ export const gallerySlides = [
   },
 ]
 
-export const menuSections = [
-  {
-    title: 'Starters',
-    items: [
-      {
-        name: 'Roasted Tomato Bruschetta',
-        price: 9,
-        description: 'Grilled sourdough topped with marinated tomatoes, basil, and balsamic glaze.',
-      },
-      {
-        name: 'Crispy Calamari',
-        price: 12,
-        description: 'Lightly fried calamari served with lemon aioli and marinara.',
-      },
-      {
-        name: 'Seasonal Soup',
-        price: 8,
-        description: 'Ask your server about today’s chef-inspired creation.',
-      },
-    ],
-  },
-  {
-    title: 'Mains',
-    items: [
-      {
-        name: 'Seared Salmon',
-        price: 22,
-        description: 'Pan-seared salmon with lemon herb butter, roasted potatoes, and asparagus.',
-      },
-      {
-        name: 'Sunset Pasta',
-        price: 18,
-        description: 'Fettuccine with seasonal vegetables, parmesan cream sauce, and fresh herbs.',
-      },
-      {
-        name: 'Herb-Roasted Chicken',
-        price: 20,
-        description: 'Free-range chicken with garlic mashed potatoes and grilled broccolini.',
-      },
-    ],
-  },
-  {
-    title: 'Desserts',
-    items: [
-      {
-        name: 'Classic Crème Brûlée',
-        price: 9,
-        description: 'Vanilla bean custard with a caramelized sugar crust.',
-      },
-      {
-        name: 'Chocolate Lava Cake',
-        price: 10,
-        description: 'Warm chocolate cake with a molten center and vanilla ice cream.',
-      },
-      {
-        name: 'Seasonal Sorbet Trio',
-        price: 8,
-        description: 'Rotating flavors made with fresh fruit.',
-      },
-    ],
-  },
-]

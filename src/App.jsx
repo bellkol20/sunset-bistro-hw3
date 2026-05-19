@@ -5,6 +5,7 @@ import { Home } from './pages/Home'
 import { About } from './pages/About'
 import { Menu } from './pages/Menu'
 import { Contact } from './pages/Contact'
+import { Admin } from './pages/Admin'
 
 export default function App() {
   // Match Vite `base` so routes work on GitHub Pages (project site under /<repo>/)
@@ -20,6 +21,7 @@ export default function App() {
             <Route path="about" element={<About />} />
             <Route path="menu" element={<Menu />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="admin" element={<Admin />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: sunset-bistro
+    runtime: node
+    buildCommand: npm install && npm run build && npm install --prefix server
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
